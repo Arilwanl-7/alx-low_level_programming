@@ -2,16 +2,16 @@
 
 /**
  * main - Entry point
- * description: print all the letters except q and e
+ * description: print all except q and e
  * Return: 0
  */
 int main(void)
 {
-  char x;
+char b;
 
-  for (x = 'a'; x <= 'z'; x++)
-    if (x != 'q' && x != 'e')
-      putchar(x);
-  putchar('\n');
-  return (0);
+for (b = 'a'; b <= 'z'; b++)
+if (b != 'q' && b != 'e')
+putchar(b);
+putchar('\n');
+return (0);
 }
