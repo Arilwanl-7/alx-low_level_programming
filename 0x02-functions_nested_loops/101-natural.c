@@ -1,29 +1,29 @@
 #include "main.h"
 /**
  *powB - raises the number base to power power
-  *@base : the base
-   *@power : the power
-    *Return: return the answer
-     */
-     int powB(int base, int power)
-     {
-     int i, prod = 1;
+ *@base : the base
+ *@power : the power
+ *Return: return the answer
+ */
+int powB(int base, int power)
+{
+int i, prod = 1;
 
 for (i = 0; i < power; i++)
 {
-prod = prod * base;
+prod = prod *base;
 }
 return (prod);
 }
 
 /**
  *numLength - returns the lenth of string
-  *@num : operand number
-   *Return: number of digits
-    */
-    int numLength(int num)
-    {
-    int length = 0;
+ *@num : operand number
+ *Return: number of digits
+ */
+int numLength(int num)
+{
+int length = 0;
 
 if (!num)
 {
@@ -42,12 +42,12 @@ return (length);
 
 /**
  *putnchar - Print a number of any any digit
-  *@num : takes an input number
-   *
-    *
-     */
-     void putnchar(int num)
-     {
+ *@num : takes an input number
+ *
+ *
+ */
+void putnchar(int num)
+{
 
 int length = numLength(num), j = length - 1, k, tmp2, digit1;
 
@@ -86,14 +86,14 @@ j--;
 }
 /**
  * sumr - returns the sum of numbers from start to end with step
-  * @start: the first number
-   * @end: the last number
-    *@step:the number of  steps
-     * Return: sum
-      */
-      int sumr(int start, int end, int step)
-      {
-      int sum = 0, i;
+ * @start: the first number
+ * @end: the last number
+ *@step:the number of  steps
+ * Return: sum
+ */
+int sumr(int start, int end, int step)
+{
+int sum = 0, i;
 
 for (i = start; i < end; i += step)
 {
@@ -104,11 +104,11 @@ return (sum);
 }
 /**
  * main - prints the sum of all numbers under 1024
-  * that are divisible by 3 or 5
-   * Return: 0
-    */
-    int main(void)
-    {
+ * that are divisible by 3 or 5
+ * Return: 0
+ */
+int main(void)
+{
 
 putnchar(sumr(3, 1024, 3) + sumr(5, 1024, 5) - sumr(15, 1024, 15));
 _putchar('\n');
